@@ -4,12 +4,10 @@ import Navbar from "./navbar"
 
 const Header = () => {
   const [menu, setMenu] = useState(false)
-  const [width, setWidth] = useState(768)
+  const [width, setWidth] = useState(769)
   useEffect(() => {
-    if (window.innerWidth > width) {
+    if (window.innerWidth >= width) {
       setMenu(true)
-    } else {
-      setMenu(false)
     }
   })
   return (
