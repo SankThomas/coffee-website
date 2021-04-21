@@ -7,7 +7,7 @@ const Pricing = () => {
   const [cards, setCards] = useState(pricing)
   return (
     <>
-      <section className="px-5 py-10 xl:max-w-7xl xl:mx-auto">
+      <section className="px-5 py-10 xl:max-w-7xl xl:mx-auto" id="pricing">
         <h2 className="mb-5">Pricing</h2>
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
           {pricing.map(({ id, title, price, services, button }) => {
