@@ -24,7 +24,7 @@ const Header = () => {
         <div className="md:hidden">
           <button>
             <HiMenuAlt2
-              className="text-6xl text-white"
+              className="text-4xl text-white"
               onClick={() => setMenu(!menu)}
             />
           </button>
