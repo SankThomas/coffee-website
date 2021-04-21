@@ -11,7 +11,7 @@ import {
 const Footer = () => {
   return (
     <>
-      <footer className="px-5 py-10">
+      <footer className="px-5 py-10" id="contacts">
         <h2 className="text-center mb-5">Social Media Contacts</h2>
         <ul className="flex items-center justify-center flex-wrap">
           <li className="mx-5 my-5">
