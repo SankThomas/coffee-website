@@ -1,9 +1,17 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { HiMenuAlt2 } from "react-icons/hi"
 import Navbar from "./navbar"
 
 const Header = () => {
   const [menu, setMenu] = useState(false)
+  const [width, setWidth] = useState(768)
+  useEffect(() => {
+    if (window.innerWidth > width) {
+      setMenu(true)
+    } else {
+      setMenu(false)
+    }
+  })
   return (
     <>
       <header className="absolute w-full p-5">
